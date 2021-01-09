@@ -26,3 +26,10 @@ docker-compose build
 ```
 docker-compose up
 ```
+
+
+## Usage
+
+The WebApp is served in the port _8000_ of the host machine.
+* Go to http://0.0.0.0:8000 to see a hello message from the WebApp service.
+* Go to http://0.0.0.0:8000/movies to see the movies list.
