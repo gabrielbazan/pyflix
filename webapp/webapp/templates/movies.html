@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>{{service_name}}</title>
+    </head>
+    <body>
+        <div>
+            <h1>Welcome to the {{service_name}}!</h1>
+
+            <div>
+                <h2>Movies</h2>
+
+                <div>
+                    {% for movie in movies %}
+                        <div>
+                            <strong>{{ movie.title }}</strong>
+                            <p>{% for person in movie.people %} {{ person.name }}, {% endfor %}</p>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
