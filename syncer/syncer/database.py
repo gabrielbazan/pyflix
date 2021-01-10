@@ -14,5 +14,10 @@ def get_movies_collection():
 
 
 def get_database():
-    client = MongoClient(MONGODB_HOST, MONGODB_PORT, username=MONGODB_USERNAME, password=MONGODB_PASSWORD)
+    client = MongoClient(
+        MONGODB_HOST,
+        MONGODB_PORT,
+        username=MONGODB_USERNAME,
+        password=MONGODB_PASSWORD,
+    )
     return client[MONGODB_DATABASE_NAME]

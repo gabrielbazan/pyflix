@@ -66,3 +66,7 @@ old. If a thread has to update the data, it will take a long time to refresh it,
 respond. So time to time, we'll have a call to the webapp that is really slow. And what if
 two calls are made to the webapp almost at the same time? There's no lock saying that some
 other thread is updating the data, so the data would be updated twice at the same time.
+
+
+**What did you unit test?** I tested the webapp route that serves the movies, and some of 
+the most important classes in the Syncer service. I haven't done TDD, nor tested everything.
